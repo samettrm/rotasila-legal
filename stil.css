@@ -1,0 +1,22 @@
+:root { color-scheme: light dark; --zemin: #F6F5F1; --metin: #1C2230; --ikincil: #5B6272; --cizgi: #DAD7CE; --vurgu: #0F4C81; --kutu: #FFFFFF; }
+@media (prefers-color-scheme: dark) { :root { --zemin: #11141B; --metin: #EEF0F4; --ikincil: #A3A9B6; --cizgi: #2C3240; --vurgu: #8CC0F2; --kutu: #181C25; } }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--zemin); color: var(--metin); font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+header, main, footer { max-width: 46rem; margin: 0 auto; padding: 0 20px; }
+header { padding-top: 28px; }
+header a.marka { font-weight: 700; font-size: 1.15rem; color: var(--metin); text-decoration: none; }
+nav { display: flex; flex-wrap: wrap; gap: 6px 18px; margin: 12px 0 0; font-size: .95rem; }
+nav a { color: var(--vurgu); text-decoration: none; }
+nav a[aria-current="page"] { color: var(--metin); font-weight: 600; }
+h1 { font-size: 1.7rem; line-height: 1.25; margin: 32px 0 4px; }
+h2 { font-size: 1.2rem; margin: 36px 0 8px; }
+h3 { font-size: 1.02rem; margin: 22px 0 6px; }
+.meta { color: var(--ikincil); font-size: .9rem; margin: 0 0 24px; }
+.ozet { background: var(--kutu); border: 1px solid var(--cizgi); border-radius: 10px; padding: 14px 16px; }
+ul, ol { padding-left: 1.25rem; }
+li { margin: 5px 0; }
+a { color: var(--vurgu); }
+table { width: 100%; border-collapse: collapse; font-size: .95rem; }
+th, td { text-align: left; vertical-align: top; padding: 8px 6px; border-bottom: 1px solid var(--cizgi); }
+hr { border: 0; border-top: 1px solid var(--cizgi); margin: 44px 0; }
+footer { color: var(--ikincil); font-size: .88rem; padding-top: 12px; padding-bottom: 48px; }
